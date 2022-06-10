@@ -1,22 +1,23 @@
 <template>
   <div>
-    <p>$emit组件通信</p>
-    <button @click="toFather">绑定emit</button>
+    <p>ref/$refs组件通信</p>
+    {{ refsList }}
   </div>
 </template>
 <script>
 export default {
-  name: "comEmit",
+  name: "comRefs",
+  props: {
+    toSonProps: { type: Array },
+  },
   data() {
     return {
-      emitList: [1, 2, 3],
+      refsList: [3, 3, 3],
     };
   },
   methods: {
     toFather() {
       console.log("toFather");
-
-      this.$emit("getSonEmit", this.emitList);
     },
   },
 };

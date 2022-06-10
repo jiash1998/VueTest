@@ -12,6 +12,7 @@ import comInfo from '../pages/basicDemo/comInfo.vue';
 
 
 
+
 Vue.use(VueRouter);
 
 const routes = [
