@@ -22,9 +22,14 @@
           >事件处理及修饰符</router-link
         ></el-button
       >
-      <el-button type="warning" 
-        > <router-link to="/home/comInfo" tag="span"
+      <el-button type="warning">
+        <router-link to="/home/comInfo" tag="span"
           >组件通信</router-link
+        ></el-button
+      >
+      <el-button type="warning">
+        <router-link to="/home/slotDemo" tag="span"
+          >插槽</router-link
         ></el-button
       >
       <el-button type="danger">内置指令和自定义指令</el-button>

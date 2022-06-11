@@ -8,6 +8,8 @@ import computedDemo from '../pages/basicDemo/computedDemo.vue';
 import watchDemo from '../pages/basicDemo/watchDemo.vue';
 import condListRender from '../pages/basicDemo/condListRender.vue';
 import comInfo from '../pages/basicDemo/comInfo.vue';
+import slotDemo from '../pages/basicDemo/slotDemo.vue';
+
 
 
 
@@ -40,6 +42,10 @@ const routes = [
         }, {
             path: '/home/comInfo',
             component: comInfo
+        },
+        {
+            path: '/home/slotDemo',
+            component: slotDemo
         },]
     }]
 
