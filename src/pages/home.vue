@@ -37,7 +37,21 @@
           >混入</router-link
         ></el-button
       >
-      <el-button type="danger">内置指令和自定义指令</el-button>
+      <el-button type="danger">
+        <router-link to="/home/directiveDemo" tag="span"
+          >自定义指令</router-link
+        ></el-button
+      >
+      <el-button type="info">
+        <router-link to="/home/pluginDemo" tag="span"
+          >插件plugin</router-link
+        ></el-button
+      >
+      <el-button type="success">
+        <router-link to="/home/filterDemo" tag="span"
+          >过滤器filter</router-link
+        ></el-button
+      >
     </el-row>
     <el-card>
       <div slot="header">展示区</div>

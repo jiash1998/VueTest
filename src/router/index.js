@@ -10,6 +10,9 @@ import condListRender from '../pages/basicDemo/condListRender.vue';
 import comInfo from '../pages/basicDemo/comInfo.vue';
 import slotDemo from '../pages/basicDemo/slotDemo.vue';
 import mixinDemo from '../pages/basicDemo/mixinDemo.vue';
+import directiveDemo from '../pages/basicDemo/directiveDemo.vue';
+import pluginDemo from '../pages/basicDemo/pluginDemo.vue';
+import filterDemo from '../pages/basicDemo/filterDemo.vue';
 
 
 
@@ -47,6 +50,17 @@ const routes = [
         }, {
             path: '/home/mixinDemo',
             component: mixinDemo
+        }, {
+            path: '/home/directiveDemo',
+            component: directiveDemo
+        },
+        {
+            path: '/home/pluginDemo',
+            component: pluginDemo
+        },
+        {
+            path: '/home/filterDemo',
+            component: filterDemo
         },]
     }]
 
