@@ -9,9 +9,7 @@ import watchDemo from '../pages/basicDemo/watchDemo.vue';
 import condListRender from '../pages/basicDemo/condListRender.vue';
 import comInfo from '../pages/basicDemo/comInfo.vue';
 import slotDemo from '../pages/basicDemo/slotDemo.vue';
-
-
-
+import mixinDemo from '../pages/basicDemo/mixinDemo.vue';
 
 
 
@@ -46,6 +44,9 @@ const routes = [
         {
             path: '/home/slotDemo',
             component: slotDemo
+        }, {
+            path: '/home/mixinDemo',
+            component: mixinDemo
         },]
     }]
 

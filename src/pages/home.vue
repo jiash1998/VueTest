@@ -32,6 +32,11 @@
           >插槽</router-link
         ></el-button
       >
+      <el-button type="warning">
+        <router-link to="/home/mixinDemo" tag="span"
+          >混入</router-link
+        ></el-button
+      >
       <el-button type="danger">内置指令和自定义指令</el-button>
     </el-row>
     <el-card>
