@@ -13,6 +13,10 @@ import mixinDemo from '../pages/basicDemo/mixinDemo.vue';
 import directiveDemo from '../pages/basicDemo/directiveDemo.vue';
 import pluginDemo from '../pages/basicDemo/pluginDemo.vue';
 import filterDemo from '../pages/basicDemo/filterDemo.vue';
+import routeDemo1 from '../pages/basicDemo/routeDemo1.vue';
+import routeDemo2 from '../pages/basicDemo/routeDemo2.vue';
+import routeDemo3 from '../pages/basicDemo/routeDemo3.vue';
+import routeDemo4 from '../pages/basicDemo/routeDemo4.vue';
 
 
 
@@ -28,40 +32,65 @@ const routes = [
         name: "home",
         path: "/home",
         children: [{
-            path: '/home/eventListener',
+            path: 'eventListener',
             component: eventListener
         }, {
-            path: '/home/computedDemo',
+            path: 'computedDemo',
             component: computedDemo
         },
         {
-            path: '/home/watchDemo',
+            path: 'watchDemo',
             component: watchDemo
         }, {
-            path: '/home/condListRender',
+            path: 'condListRender',
             component: condListRender
         }, {
-            path: '/home/comInfo',
+            path: 'comInfo',
             component: comInfo
         },
         {
-            path: '/home/slotDemo',
+            path: 'slotDemo',
             component: slotDemo
         }, {
-            path: '/home/mixinDemo',
+            path: 'mixinDemo',
             component: mixinDemo
         }, {
-            path: '/home/directiveDemo',
+            path: 'directiveDemo',
             component: directiveDemo
         },
         {
-            path: '/home/pluginDemo',
+            path: 'pluginDemo',
             component: pluginDemo
         },
         {
-            path: '/home/filterDemo',
+            path: 'filterDemo',
             component: filterDemo
-        },]
+        },
+        {
+            name: 'routeDemo1',
+            path: 'routeDemo1',
+            component: routeDemo1
+        }, {
+            path: 'routeDemo2',
+            component: routeDemo2
+        }, {
+            name: "routeDemo3",
+            path: 'routeDemo3/:id/:name',
+            // path: 'routeDemo3',
+            component: routeDemo3
+        }, {
+            name: "routeDemo4",
+            path: 'routeDemo4',
+            component: routeDemo4,
+            // props: { a: 1, b: [1, 2, 3] }
+            // props: true
+            props(route) {
+                return {
+                    id: route.query.id
+                }
+            }
+        },
+        ]
     }]
 
 export default new VueRouter({
