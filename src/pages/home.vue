@@ -106,6 +106,11 @@
           >路由传参4</router-link
         >
       </el-button>
+      <el-button type="success">
+        <router-link to="/home/vuexDemo" tag="span"
+          >状态管理VueX</router-link
+        ></el-button
+      >
     </el-row>
     <el-card>
       <div slot="header">展示区</div>

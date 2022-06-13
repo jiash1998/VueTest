@@ -21,7 +21,7 @@ const mutations = {
     ADD(context, value) {
         console.log("enter mutation");
 
-        context.numX += value;
+        context.numX1 += value;
         context.numX2 += value;
         context.numX3 += value;
 
@@ -29,7 +29,7 @@ const mutations = {
     JIAN(context, value) {
         console.log("enter mutation", value);
 
-        context.numX -= value;
+        context.numX1 -= value;
         context.numX2 -= value;
         context.numX3 -= value;
 
@@ -37,12 +37,16 @@ const mutations = {
 }
 
 const state = {
-    numX: 100,
+    numX1: 100,
     numX2: 200,
     numX3: 300
 }
 
-const getters = {}
+const getters = {
+    bigNum(state) {
+        return state.numX1 * 10
+    }
+}
 
 export default new Vuex.Store({
     // ...

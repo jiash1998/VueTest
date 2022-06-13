@@ -17,6 +17,7 @@ import routeDemo1 from '../pages/basicDemo/routeDemo1.vue';
 import routeDemo2 from '../pages/basicDemo/routeDemo2.vue';
 import routeDemo3 from '../pages/basicDemo/routeDemo3.vue';
 import routeDemo4 from '../pages/basicDemo/routeDemo4.vue';
+import vuexDemo from '../pages/basicDemo/vuexDemo.vue';
 
 
 
@@ -89,6 +90,11 @@ const routes = [
                     id: route.query.id
                 }
             }
+        },
+        {
+            name: 'vuexDemo',
+            path: 'vuexDemo',
+            component: vuexDemo
         },
         ]
     }]
