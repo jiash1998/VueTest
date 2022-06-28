@@ -19,6 +19,8 @@ import routeDemo3 from '../pages/basicDemo/routeDemo3.vue';
 import routeDemo4 from '../pages/basicDemo/routeDemo4.vue';
 import vuexDemo from '../pages/basicDemo/vuexDemo.vue';
 
+//jsDemo
+const debounceDemo = () => import('../pages/jsDemo/debounceDemo.vue')
 
 
 Vue.use(VueRouter);
@@ -95,6 +97,12 @@ const routes = [
             name: 'vuexDemo',
             path: 'vuexDemo',
             component: vuexDemo
+        },
+        //jsDemo
+        {
+            name: 'debounceDemo',
+            path: 'debounceDemo',
+            component: debounceDemo
         },
         ]
     }]

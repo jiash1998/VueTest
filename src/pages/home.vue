@@ -111,6 +111,11 @@
           >状态管理VueX</router-link
         ></el-button
       >
+      <el-button type="info">
+        <router-link to="/home/debounceDemo" tag="span"
+          >防抖</router-link
+        ></el-button
+      >
     </el-row>
     <el-card>
       <div slot="header">展示区</div>
