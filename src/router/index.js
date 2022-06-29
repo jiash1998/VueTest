@@ -19,6 +19,7 @@ import routeDemo3 from '../pages/basicDemo/routeDemo3.vue';
 import routeDemo4 from '../pages/basicDemo/routeDemo4.vue';
 import vuexDemo from '../pages/basicDemo/vuexDemo.vue';
 
+const nextTickDemo = () => import("../pages/basicDemo/nextTickDemo.vue");
 //jsDemo
 const debounceDemo = () => import('../pages/jsDemo/debounceDemo.vue')
 
@@ -97,6 +98,11 @@ const routes = [
             name: 'vuexDemo',
             path: 'vuexDemo',
             component: vuexDemo
+        },
+        {
+            name: 'nextTickDemo',
+            path: 'nextTickDemo',
+            component: nextTickDemo
         },
         //jsDemo
         {
