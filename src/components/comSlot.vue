@@ -3,7 +3,8 @@
     <p>默认插槽子组件</p>
     <slot :num="num"></slot>
     <slot name="slotA"></slot>
-    <slot name="slotB" :obj="obj" :num="num"></slot>
+    <!-- <slot name="slotB" :obj="obj" :num="num"></slot> -->
+    <slot name="slotB" :obj="obj"></slot>
   </div>
 </template>
 <script>
